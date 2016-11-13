@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href='fullcalendar-3.0.1/fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar-3.0.1/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='fullcalendar-3.0.1/lib/moment.min.js'></script>
+<script src='fullcalendar-3.0.1/lib/jquery.min.js'></script>
+<script src='fullcalendar-3.0.1/fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2016-11-12',
+			navLinks: true, // can click day/week names to navigate views
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [{url: "events.html#0", start: "2016-04-11", end: "2016-04-15", id: 0, title: "IST Startup Week"}, {url: "events.html#1", start: "2015-10-24", end: "2015-10-24", id: 1, title: "IST Fall Open House"}, {url: "events.html#2", start: "2014-05-12", end: "2014-05-12", id: 2, title: "PSU Panel Talk: Alumni Making an Impact at the Region's Hottest Tech Companies"}, {url: "events.html#3", start: "2014-04-07", end: "", id: 3, title: "IST Start-up Week 2014"}, {url: "events.html#4", start: "2014-03-24", end: "2014-03-24", id: 4, title: "Dean Feedback Session"}, {url: "events.html#5", start: "2013-12-11", end: "2013-12-11", id: 5, title: "Fall 2013 IST 446 Video Game Extravaganza"}, {url: "events.html#6", start: "2013-12-05", end: "2013-12-05", id: 6, title: "IST Diplomats Leadership Academy Information Session"}, {url: "events.html#7", start: "2013-11-11", end: "2013-11-11", id: 7, title: "Dean's Feedback Session - Fall 2013"}, {url: "events.html#8", start: "2013-10-24", end: "", id: 8, title: "Weiqi (\u56f4\u68cb, the Game of Go), Sun Tzu, and the Chinese Way of War (10/24)"}, {url: "events.html#9", start: "2013-10-04", end: "2013-10-04", id: 9, title: "First Annual Undergraduate Research Symposium"}, {url: "events.html#10", start: "2013-09-27", end: "", id: 10, title: "Teaching Technology for Social Justice, with Dr. Lynette Kvasny"}, {url: "events.html#11", start: "2013-08-25", end: "2013-08-25", id: 11, title: "College Dean's Meeting"}, {url: "events.html#12", start: "2013-02-22", end: "", id: 12, title: "McMurtry Award Lecture with Col. Jake Graham"}, {url: "events.html#13", start: "2012-10-25", end: "2012-10-25", id: 13, title: "IST Majors Night"}, {url: "events.html#14", start: "2012-04-09", end: "2012-04-13", id: 14, title: "Start-up Week"}, {url: "events.html#15", start: "2012-01-30", end: "2012-01-30", id: 15, title: "IST 590 Colloquium: Dr. Richard Tutwiler"}, {url: "events.html#16", start: "2011-09-19", end: "2011-09-19", id: 16, title: "IST Pro Expo"}, {url: "events.html#17", start: "2011-09-17", end: "2011-09-17", id: 17, title: "Parents & Families Day"}, {url: "events.html#18", start: "2011-09-09", end: "2011-09-09", id: 18, title: "IST Welcome Back Picnic sponsored by Ernst & Young"}, {url: "events.html#19", start: "2011-09-08", end: "2011-09-08", id: 19, title: "Get the Scoop on Deloitte"}, {url: "events.html#20", start: "2011-09-08", end: "2011-09-08", id: 20, title: "Mobiquity Recruiting Event"}, {url: "events.html#21", start: "2011-09-07", end: "2011-09-07", id: 21, title: "IST Connections Day"}, {url: "events.html#22", start: "2011-05-31", end: "2011-05-31", id: 22, title: "IST talk:  Informal Animation Sketching with K-Sketch"}, {url: "events.html#23", start: "2011-04-29", end: "2011-04-29", id: 23, title: "IST Spring Picnic sponsored by PricewaterhouseCoopers"}, {url: "events.html#24", start: "2011-04-25", end: "2011-04-25", id: 24, title: "Colloquium Guest Speaker Dr. Anurag Acharya"}, {url: "events.html#25", start: "2016-08-15", end: "2016-09-07", id: 25, title: "Intent to Graduate - Activation Period"}, {url: "events.html#26", start: "2016-08-19", end: "2016-08-20", id: 26, title: "Leave of Absence - Deadline"}, {url: "events.html#27", start: "2016-08-19", end: "2016-08-21", id: 27, title: "*Arrival Day - New Students"}, {url: "events.html#28", start: "2016-08-20", end: "2016-08-22", id: 28, title: "*Arrival Day - Returning Students"}, {url: "events.html#29", start: "2016-08-21", end: "2016-08-22", id: 29, title: "Registration - Deadline"}, {url: "events.html#30", start: "2016-08-22", end: "2016-08-23", id: 30, title: "Classes Begin"}, {url: "events.html#31", start: "2016-08-27", end: "2016-08-28", id: 31, title: "*Regular Drop - Deadline until 11:59 p.m. (ET)"}, {url: "events.html#32", start: "2016-08-28", end: "2016-08-29", id: 32, title: "*Regular Add - Deadline until 11:59 p.m. (ET)"}, {url: "events.html#33", start: "2016-09-05", end: "2016-09-06", id: 33, title: "Labor Day Holiday - No Classes"}, {url: "events.html#34", start: "2016-08-28", end: "2016-08-29", id: 34, title: "*Late Drop Begins"}, {url: "events.html#35", start: "2016-08-29", end: "2016-08-30", id: 35, title: "*Late Registration Begins"}, {url: "events.html#36", start: "2016-10-10", end: "2016-11-01", id: 36, title: "Final Exam Conflict - Filing Period"}, {url: "events.html#37", start: "2016-11-11", end: "2016-11-12", id: 37, title: "*Late Drop - Deadline"}, {url: "events.html#38", start: "2016-11-11", end: "2016-11-12", id: 38, title: "Declare Minor - Deadline (Graduating Students)"}, {url: "events.html#39", start: "2016-11-20 08:00:00-", end: "2016-11-26 08:30:00-", id: 39, title: "Thanksgiving Holiday - No Classes"}, {url: "events.html#40", start: "2016-12-09", end: "2016-12-10", id: 40, title: "Withdrawal - Deadline"}, {url: "events.html#41", start: "2016-12-09", end: "2016-12-10", id: 41, title: "Classes End"}, {url: "events.html#42", start: "2016-12-10", end: "2016-12-12", id: 42, title: "*Study Days"}, {url: "events.html#43", start: "2016-12-12", end: "2016-12-17", id: 43, title: "*Final Exams"}, {url: "events.html#44", start: "2016-12-17", end: "2016-12-18", id: 44, title: "*Fall Commencement"}, {url: "events.html#45", start: "2017-01-16 09:00:00-", end: "2017-01-16 16:00:00-", id: 45, title: "Company Event with PRICEWATERHOUSECOOPERS"}, {url: "events.html#46", start: "2017-01-11 11:00:00-", end: "2017-01-11 15:00:00-", id: 46, title: "Company Event with ERNST AND YOUNG"}, {url: "events.html#47", start: "2017-01-10 11:00:00-", end: "2017-01-10 15:00:00-", id: 47, title: "Company Event with KPMG LLP"}, {"url": "events.html#48", "start": "2016-09-26 10:36:00-", "end": "2016-11-30 10:35:00-", "id": 48, "title": "KPMG Future Diversity Leaders"}, {"url": "events.html#49", "start": "2016-11-14 17:15:00-", "end": "2016-11-14 18:15:00-", "id": 49, "title": "JOB SEARCH FOR INTERNATIONAL STUDENTS"}, {"url": "events.html#50", "start": "2016-11-15 16:00:00-", "end": "2016-11-15 17:30:00-", "id": 50, "title": "UNITED STATES WORK VISAS AFTER GRADUATION"}, {"url": "events.html#51", "start": "2016-11-16 16:00:00-", "end": "2016-11-16 17:00:00-", "id": 51, "title": "CAMPUS RESOURCES PANEL FOR INTERNATIONAL STUDENTS"}, {"url": "events.html#52", "start": "2016-11-17 18:00:00-", "end": "2016-11-17 20:00:00-", "id": 52, "title": "MARKETING YOUR STUDY ABROAD EXPERIENCE"}, {"url": "events.html#53", "start": "2016-11-18 09:00:00-", "end": "2016-11-18 10:00:00-", "id": 53, "title": "Deloitte \"Womens Initiative\""}]
+		
+		});
+		
+	});
+
+</script>
+    <title>Home</title>
+	<style>
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	</style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Calendar</a>
+                    </li>
+                    <li>
+                        <a href="agenda.html">Agenda</a>
+                    </li>
+					<li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+					<li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Penn State IST Aggregated Calendar!<br>
+                    <small>Now you can see all your IST events (academic, career, sporting and other) under one platform!</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+<br><br>
+        <!-- Project One -->
+        <div class="row">
+         
+             <div id='calendar'></div>
+        
+               
+		
+            <!--<div class="col-md-5">
+                <h3>Project One</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>-->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+       
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

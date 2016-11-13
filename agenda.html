@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href='fullcalendar-3.0.1/fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar-3.0.1/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='fullcalendar-3.0.1/lib/moment.min.js'></script>
+<script src='fullcalendar-3.0.1/lib/jquery.min.js'></script>
+<script src='fullcalendar-3.0.1/fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2016-11-12',
+			navLinks: true, // can click day/week names to navigate views
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [{"url": "events.html#49", "start": "2016-11-14 17:15:00-", "end": "2016-11-14 18:15:00-", "id": 49, "title": "JOB SEARCH FOR INTERNATIONAL STUDENTS"}, {"url": "events.html#50", "start": "2016-11-15 16:00:00-", "end": "2016-11-15 17:30:00-", "id": 50, "title": "UNITED STATES WORK VISAS AFTER GRADUATION"}, {"url": "events.html#51", "start": "2016-11-16 16:00:00-", "end": "2016-11-16 17:00:00-", "id": 51, "title": "CAMPUS RESOURCES PANEL FOR INTERNATIONAL STUDENTS"}, {"url": "events.html#52", "start": "2016-11-17 18:00:00-", "end": "2016-11-17 20:00:00-", "id": 52, "title": "MARKETING YOUR STUDY ABROAD EXPERIENCE"}, {"url": "events.html#53", "start": "2016-11-18 09:00:00-", "end": "2016-11-18 10:00:00-", "id": 53, "title": "Deloitte \"Womens Initiative\""}]
+		
+		});
+		
+	});
+
+</script>
+    <title>Home</title>
+	<style>
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	</style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index1.html">Calendar</a>
+                    </li>
+                    <li>
+                        <a href="agenda.html">Agenda</a>
+                    </li>
+					<li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+					<li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Your Aggregated Events!<br>
+                    <small>Now you can see all your IST events (academic, career, sporting and other) under one platform!</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+<br><br>
+        <!-- Project One -->
+        <div class="row">
+         
+             <div id='calendar'></div>
+        
+               
+		
+            <!--<div class="col-md-5">
+                <h3>Project One</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>-->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+       
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

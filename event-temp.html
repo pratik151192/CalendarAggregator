@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script>
+		var events = [{url: "events.html#0", start: "2016-04-11", end: "2016-04-15", id: 0, title: "IST Startup Week"}, {url: "events.html#1", start: "2015-10-24", end: "2015-10-24", id: 1, title: "IST Fall Open House"}, {url: "events.html#2", start: "2014-05-12", end: "2014-05-12", id: 2, title: "PSU Panel Talk: Alumni Making an Impact at the Region's Hottest Tech Companies"}, {url: "events.html#4", start: "2014-03-24", end: "2014-03-24", id: 4, title: "Dean Feedback Session"}, {url: "events.html#5", start: "2013-12-11", end: "2013-12-11", id: 5, title: "Fall 2013 IST 446 Video Game Extravaganza"}, {url: "events.html#6", start: "2013-12-05", end: "2013-12-05", id: 6, title: "IST Diplomats Leadership Academy Information Session"}, {url: "events.html#7", start: "2013-11-11", end: "2013-11-11", id: 7, title: "Dean's Feedback Session - Fall 2013"}, {url: "events.html#9", start: "2013-10-04", end: "2013-10-04", id: 9, title: "First Annual Undergraduate Research Symposium"}, {url: "events.html#11", start: "2013-08-25", end: "2013-08-25", id: 11, title: "College Dean's Meeting"}, {url: "events.html#13", start: "2012-10-25", end: "2012-10-25", id: 13, title: "IST Majors Night"}, {url: "events.html#14", start: "2012-04-09", end: "2012-04-13", id: 14, title: "Start-up Week"}, {url: "events.html#15", start: "2012-01-30", end: "2012-01-30", id: 15, title: "IST 590 Colloquium: Dr. Richard Tutwiler"}, {url: "events.html#16", start: "2011-09-19", end: "2011-09-19", id: 16, title: "IST Pro Expo"}, {url: "events.html#17", start: "2011-09-17", end: "2011-09-17", id: 17, title: "Parents & Families Day"}, {url: "events.html#18", start: "2011-09-09", end: "2011-09-09", id: 18, title: "IST Welcome Back Picnic sponsored by Ernst & Young"}, {url: "events.html#19", start: "2011-09-08", end: "2011-09-08", id: 19, title: "Get the Scoop on Deloitte"}, {url: "events.html#20", start: "2011-09-08", end: "2011-09-08", id: 20, title: "Mobiquity Recruiting Event"}, {url: "events.html#21", start: "2011-09-07", end: "2011-09-07", id: 21, title: "IST Connections Day"}, {url: "events.html#22", start: "2011-05-31", end: "2011-05-31", id: 22, title: "IST talk:  Informal Animation Sketching with K-Sketch"}, {url: "events.html#23", start: "2011-04-29", end: "2011-04-29", id: 23, title: "IST Spring Picnic sponsored by PricewaterhouseCoopers"}, {url: "events.html#24", start: "2011-04-25", end: "2011-04-25", id: 24, title: "Colloquium Guest Speaker Dr. Anurag Acharya"}, {url: "events.html#0", start: "2016-08-15", end: "2016-09-07", id: 28, title: "Intent to Graduate - Activation Period"}, {url: "events.html#1", start: "2016-08-19", end: "2016-08-20", id: 29, title: "Leave of Absence - Deadline"}, {url: "events.html#2", start: "2016-08-19", end: "2016-08-21", id: 30, title: "*Arrival Day - New Students"}, {url: "events.html#3", start: "2016-08-20", end: "2016-08-22", id: 31, title: "*Arrival Day - Returning Students"}, {url: "events.html#4", start: "2016-08-21", end: "2016-08-22", id: 32, title: "Registration - Deadline"}, {url: "events.html#5", start: "2016-08-22", end: "2016-08-23", id: 33, title: "Classes Begin"}, {url: "events.html#6", start: "2016-08-27", end: "2016-08-28", id: 34, title: "*Regular Drop - Deadline until 11:59 p.m. (ET)"}, {url: "events.html#7", start: "2016-08-28", end: "2016-08-29", id: 35, title: "*Regular Add - Deadline until 11:59 p.m. (ET)"}, {url: "events.html#8", start: "2016-09-05", end: "2016-09-06", id: 36, title: "Labor Day Holiday - No Classes"}, {url: "events.html#9", start: "2016-08-28", end: "2016-08-29", id: 37, title: "*Late Drop Begins"}, {url: "events.html#10", start: "2016-08-29", end: "2016-08-30", id: 38, title: "*Late Registration Begins"}, {url: "events.html#11", start: "2016-10-10", end: "2016-11-01", id: 39, title: "Final Exam Conflict - Filing Period"}, {url: "events.html#12", start: "2016-11-11", end: "2016-11-12", id: 40, title: "*Late Drop - Deadline"}, {url: "events.html#13", start: "2016-11-11", end: "2016-11-12", id: 41, title: "Declare Minor - Deadline (Graduating Students)"}, {url: "events.html#14", start: "2016-11-20 08:00:00-", end: "2016-11-26 08:30:00-", id: 42, title: "Thanksgiving Holiday - No Classes"}, {url: "events.html#15", start: "2016-12-09", end: "2016-12-10", id: 43, title: "Withdrawal - Deadline"}, {url: "events.html#16", start: "2016-12-09", end: "2016-12-10", id: 44, title: "Classes End"}, {url: "events.html#17", start: "2016-12-10", end: "2016-12-12", id: 45, title: "*Study Days"}, {url: "events.html#18", start: "2016-12-12", end: "2016-12-17", id: 46, title: "*Final Exams"}, {url: "events.html#19", start: "2016-12-17", end: "2016-12-18", id: 47, title: "*Fall Commencement"}, start: "2017-01-11 11:00:00-", end: "2017-01-11 15:00:00-", id: 49, title: "Company Event with ERNST AND YOUNG"}, {url: "events.html#50", start: "2017-01-10 11:00:00-", end: "2017-01-10 15:00:00-", id: 50, title: "Company Event with KPMG LLP"}];
+		
+	</script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index1.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Agenda</a>
+                    </li>
+					<li>
+                        <a href="#">Categories</a>
+                    </li>
+					<li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Events Details<br>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+
+    {% for item in data %}
+    <h2 id="{{ item.id }}">{{ item.title }}</h2>
+
+	<p><strong>Title</strong>: <span>{{ item.title }}</span></p>
+    <p><strong>Start Time</strong>: <span>{{ item.start }}</span> - <strong>End Time</strong>: <span>{{ item.end }}</span></p>
+	{% if item.start in dates %} <b>Temperature:</b> (Min) {{ dates[item.start]["Minimum"]["Value"] }} F, (Max) {{ dates[item.start]["Maximum"]["Value"] }} F {% endif %}
+	{% if item.start in dates %} &nbsp;&nbsp;&nbsp;<img src="images1/{{ icon[item.start]['IconPhrase'] }}.jpg" height = "60" width="60" alt="{{ icon[item.start]['IconPhrase'] }}"> {% endif %}
+    {%if item.location %}<p><strong>Location</strong>: <span>{{ item.location }}</span></p>{% endif %}
+    {%if item.desc %}<p><strong>Description</strong>: <span>{{ item.desc }}</span></p>{% endif %} 
+	
+	{%if item.location %}<iframe width="200" height="160" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/search?{{ item.query }}&key=AIzaSyBGPIpvyV3i4LD5qVJuC5CIDfzAfwhYgak" allowfullscreen></iframe>{% endif %} 
+
+    {% endfor %}
+
+        </div>
+
+		
+        <!-- /.row -->
+
+        <hr>
+
+      
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
